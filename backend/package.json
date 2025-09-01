@@ -1,0 +1,25 @@
+{
+  "name": "attendance-analytics-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "NODE_ENV=production node src/server.js",
+    "lint": "echo \"(add eslint if needed)\"",
+    "seed": "node src/utils/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "luxon": "^3.5.0",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "qrcode": "^1.5.3",
+    "uuid": "^9.0.1"
+  }
+}

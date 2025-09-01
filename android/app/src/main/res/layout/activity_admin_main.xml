@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Admin & Manager" android:textSize="18sp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/studentRoll" android:hint="Student Roll No"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/studentDob" android:hint="Student DOB (YYYY-MM-DD)"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/studentName" android:hint="Student Name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/studentDept" android:hint="Department"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/createStudentBtn" android:text="Create Student"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/feesJson" android:hint='Fees JSON [{"type":"college","year":1,"amount":50000}]'
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/saveFeesBtn" android:text="Save Fees for Student"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

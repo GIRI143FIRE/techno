@@ -1,0 +1,90 @@
+{
+  "info": {
+    "name": "Attendance Analytics API",
+    "_postman_id": "demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Student Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/auth/student/login",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "auth",
+            "student",
+            "login"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"rollNo\": \"S1001\", \"dob\": \"2006-12-30\"}"
+        }
+      }
+    },
+    {
+      "name": "Teacher Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/auth/teacher/login",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "auth",
+            "teacher",
+            "login"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"rollNo\": \"T1001\", \"dob\": \"1982-01-01\"}"
+        }
+      }
+    },
+    {
+      "name": "Admin Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/auth/admin/login",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "auth",
+            "admin",
+            "login"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\": \"admin@college.edu\", \"password\": \"admin123\"}"
+        }
+      }
+    }
+  ]
+}
